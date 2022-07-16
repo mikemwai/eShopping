@@ -1,0 +1,68 @@
+<p>Our products are easily delivered country-wide for free.</p>
+
+<ul>
+    <li>
+        Free Shipping Country-wide
+    </li>
+    <li>
+        Money back Guarantee
+    </li>
+    <li>
+        Safe Shipping
+    </li>
+    <li>
+        Online Support for 24/7
+    </li>
+</ul>
+
+<h3>See what our customers are saying.</h3>
+<p>"A cost-effective and simple solution for getting all your clothes online."</p>
+<p>"Fast and easy to purchase clothes with excellent customer service too!"</p>
+<p>"The BEST place to buy clothes online for your loved ones with free shipping countrywide too!"</p>
+
+<h2>SUBSCRIBE NEWSLETTER</h2>
+<p>Sign up to receive our latest products and other news.</p>
+<p> <span class="special">Enter your Email Address.</span></p>
+<p>SUBSCRIBE</p>
+
+<h3>Content</h3>
+<ul>
+    <li>
+       <a href="../Content/Blog articles on eShopping.html">Blog articles on eShopping</a>
+    </li>
+    <li>
+       <a href="../Content/Recommendations.html">Recommendations</a>
+    </li>
+    <li>
+        <a href="../Content/Tools%20and%20Tips.html">Tools and Tips</a>
+    </li>
+</ul>
+
+<h3>Updates</h3>
+<ul>
+    <li>
+        <a href="../Updates/Product%20Launches.html">Product Launches</a>
+    </li>
+    <li>
+        <a href="../Updates/Announcements.html">Announcements</a>
+    </li>
+</ul>
+
+<h3>Offers</h3>
+<ul>
+    <li>
+        <a href="../Offers/Free%20Shipping.html">Free Shipping</a>
+    </li>
+    <li>
+        <a href="../Offers/Discounts.html">Discounts</a>
+    </li>
+    <li>
+        <a href="../Offers/Coupons.html">Coupons</a>
+    </li>
+</ul>
+<div class="footer-col-2">
+    <img src="Homepage/Logo(Grey).png">
+    <p>Our Purpose Is to Sustainably Make the Pleasure and
+        Benefits of Fashion Accessible to the Many.
+    </p>
+</div>

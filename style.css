@@ -1,0 +1,34 @@
+h1
+{
+    color:turquoise;
+}
+p
+{
+    color:red;
+}
+.special
+{
+   color:orange;
+    font-weight: bold;
+}
+li.special,
+span.special
+{
+    color:orange;
+    font-weight:bold;
+}
+li em
+{
+    color:rebeccapurple;
+}
+h1 + p
+{
+    background-color: beige;
+    font-size:200%;
+}
+body h1 + p .special
+{
+    color:red;
+    background-color:yellow;
+    padding: 5px;
+}

@@ -1,0 +1,175 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.hero
+{
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Login&Register.png);
+    background-size: cover;
+    position:absolute;
+}
+
+.navbar {
+    font-size: 120%;
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+nav ul li a
+{
+    width:180px;
+    height:60px;
+    text-decoration: none;
+    color: rgb(254, 251, 251);
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f9f8f8;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+.header .row {
+    margin-top: 70px;
+}
+
+.form-box
+{
+    width:380px;
+    height:520px;
+    position:relative;
+    margin:5% auto;
+    margin-bottom: 100px;
+    background:#fff;
+    padding:10px;
+    overflow:hidden;
+}
+.button-box
+{
+    width:220px;
+    margin:35px auto;
+    position:relative;
+    box-shadow:0 0 20px 9px #ff61241f;
+    border-radius:30px;
+}
+.toggle-btn
+{
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline:none;
+    position:relative;
+}
+#btn
+{
+  top:0;
+  left:0;
+  position:absolute;
+  width:110px;
+  height:100%;
+  background:linear-gradient(to right,#ff105f,#ffad06);
+  border-radius:30px;
+  transition: .5s;
+}
+.social-icons
+{
+    margin:30px auto;
+    text-align:center;
+}
+.social-icons img
+{
+    width:30px;
+    margin:0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor:pointer;
+    border-radius: 50%;
+}
+.input-group
+{
+    top:180px;
+    position:absolute;
+    width:280px;
+    transition: .5s;
+}
+.input-field
+{
+    width:100%;
+    padding:10px 0;
+    margin:5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background:transparent;
+}
+.submit-btn
+{
+    width:85%;
+    padding:10px 30px;
+    cursor:pointer;
+    display:block;
+    margin:auto;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border:0;
+    outline:none;
+    border-radius: 30px;
+}
+
+.form-container .error-msg
+{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+
+#login
+{
+    left:50px;
+}
+#register
+{
+    left:450px;
+}

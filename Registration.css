@@ -1,0 +1,8 @@
+input:read-only, textarea:read-only
+{
+    background-color: #818080;
+}
+p::first-letter
+{
+    font-size:130%;
+}
