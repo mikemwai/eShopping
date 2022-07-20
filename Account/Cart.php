@@ -35,8 +35,6 @@ if(!isset($_SESSION['last_name'])){
     header('location:Cart.php');
  }
 
-
-
 ?>
 
 

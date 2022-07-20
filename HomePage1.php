@@ -144,6 +144,7 @@
     </div>
 
 </div>
+
 <!-----------offer---------->
 <div class="offer">
     <div class="small-container">
