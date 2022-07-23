@@ -1,0 +1,35 @@
+:root
+{
+    --black:#333;
+    --border:2px solid var(--black);
+}
+
+.table1
+{
+        width: 60%;
+        text-align: center;
+}
+
+.table1 thead
+{
+    background: lightblue;
+}
+
+.table1 th
+{
+    padding:0.5rem;
+    font-size: 28px;
+    border-bottom:var(--border);
+    border-top:var(--border);
+    border-left:var(--border);
+    border-right:var(--border);
+}
+
+.table1 td
+{
+    padding:0.5rem;
+    font-size: 25px;
+    border-bottom:var(--border);
+    border-left:var(--border);
+    border-right:var(--border);
+}

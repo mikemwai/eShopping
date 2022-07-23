@@ -136,7 +136,7 @@ $select = mysqli_query($conn, "SELECT * FROM tbl_users");
             <td colspan="3">grand total</td>
             <td>Ksh<?php echo $grand_total; ?>/-</td>
             <td><a href="Cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');" class="btn"> delete all </a><a href="checkout.php" class="btn">Check Out</a></td>
-         </tr>
+      </tr>
    </table><br><br>
 
 
