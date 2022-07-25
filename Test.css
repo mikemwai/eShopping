@@ -1,0 +1,32 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    margin:5px;
+}
+
+.id
+{
+    background-color: yellow ;
+}
+
+span
+{
+    font-size: 30px;
+}
+
+#class
+{
+    text-align: right;
+}
+
+div
+{
+    border:solid;
+    border-width: 3px;
+    border-color: blue;
+}
+
+.table1
+{
+    width:30%;
+}
