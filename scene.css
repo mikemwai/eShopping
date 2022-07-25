@@ -1,0 +1,19 @@
+div
+{
+    border: 2px solid black;
+}
+
+#b, .c
+{
+    display: inline;
+}
+
+.e
+{
+    background-color: red;
+}
+
+#a
+{
+    text-align: left;
+}
