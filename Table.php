@@ -16,7 +16,7 @@ $array2=array(4,Titus,Peters,peters@gmail.com,active);*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Test2</title>
+        <title>Question1(e)Nov2020</title>
         <link rel="stylesheet" href="table.css">
 </head>
 <body>
