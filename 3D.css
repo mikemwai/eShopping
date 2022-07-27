@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Comic Sans MS;
+	border:solid 2px black;
+	margin:5px;
+}
+div{
+	padding:10px;
+		
+}
+.id rest
+{
+	border:solid 2px black;
+	background-color:red;
+	padding:10px;
+	margin:5px;
+}
+.class rest{
+	border:solid 2px  black;
+	padding:50px;
+	margin:20px;
+	
+
+}
+.id{
+	border:solid 2px black;
+	background-color:red;
+	position:relative;
+	
+	
+	
+}
+#class{
+	border:solid 2px black;
+	padding:10px;
+}
+#H{
+	border:solid 2px  black ;
+	padding:10px;
+	align-items:center;
+	text-align:right;
+	width:20%;
+	height :5%;
+	margin:auto;
+	
+	
+	
+}
