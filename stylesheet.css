@@ -31,6 +31,11 @@ p
    text-indent: 20px;
 }
 
+p:first-letter
+{
+    text-transform: capitalize;
+}
+
 .small-container1
 {
     border: dashed;
