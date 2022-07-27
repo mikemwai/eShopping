@@ -25,7 +25,8 @@ if(isset($_POST['add_to_cart']))
     }
     else
     {
-       $insert_product = mysqli_query($conn, "INSERT INTO tbl_cart(name, user_id, product_id, price, image, quantity) VALUES('$product_name', '$user_id', '$product_id', '$product_price', '$product_image', '$product_quantity')");
+       $insert_product = mysqli_query($conn, "INSERT INTO tbl_cart(name, user_id, product_id, price, image, quantity) 
+       VALUES('$product_name', '$user_id', '$product_id', '$product_price', '$product_image', '$product_quantity')");
        $message[] = 'Product added to cart succesfully!';
     }
  
