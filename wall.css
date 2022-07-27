@@ -1,0 +1,15 @@
+#all
+{
+    border: solid;
+}
+    #menu > p
+    {
+    border: Ipx solid;
+    background-color: yellow; width: 200px; float: left;
+    margin: 10px;
+    padding: 10px;
+    }
+
+    h1{
+        text-align:center;
+    }
