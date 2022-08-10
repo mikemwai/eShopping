@@ -1,16 +1,16 @@
 <?php
 require("connection.php");
 
-session_start();
-
-$user_id=$_SESSION['user_id'];
-
-if(!isset($_SESSION['user_id'])){
-    header('location:Account.php');
- }
-
 if(isset($_POST['add_to_cart']))
 {
+    session_start();
+
+    $user_id=$_SESSION['user_id'];
+    
+    if(!isset($_SESSION['user_id'])){
+        header('location:Account.php');
+     }
+
     $product_id=$_POST['product_id'];
     $product_name = $_POST['product_name'];
     $product_price = $_POST['unit_price'];
@@ -87,7 +87,7 @@ if(isset($message)){
 
 <!-----------Products--------->
 <div class="small-container">
-    <h2 class="title">Others Products</h2>
+    <h2 class="title">Others</h2>
     
     <div onclick="window.location.href='';" class="row">
        <?php while($row = mysqli_fetch_assoc($select)){ ?>
