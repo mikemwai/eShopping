@@ -1,10 +1,48 @@
+<?php
+require("connection.php");
+
+
+if(isset($_POST['add_to_cart']))
+{
+
+    session_start();
+
+    $user_id=$_SESSION['user_id'];
+
+   if(!isset($_SESSION['user_id'])){
+    header('location:Account.php');
+    }
+
+    $product_id=$_POST['product_id'];
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['unit_price'];
+    $product_image = $_POST['product_image'];
+    $product_quantity = 1;
+ 
+    $select_cart = mysqli_query($conn, "SELECT * FROM tbl_cart WHERE name = '$product_name' AND user_id='$user_id'");
+ 
+    if(mysqli_num_rows($select_cart) > 0)
+    {
+       $message[] = 'Product already added to cart!';
+    }
+    else
+    {
+       $insert_product = mysqli_query($conn, "INSERT INTO tbl_cart(name, user_id, product_id, price, image, quantity) 
+       VALUES('$product_name', '$user_id', '$product_id', '$product_price', '$product_image', '$product_quantity')");
+       $message[] = 'Product added to cart succesfully!';
+    }
+ 
+};
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>eShopping | Productspage</title>
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="../Account/Products.css">
 </head>
 <body>
 
@@ -31,84 +69,60 @@
         </div>
     </div>
 
-<!-------------SIngle product details----------------->
+<?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '<div class="message"><span>'.$message.'</span> </div>';
+   };
+};
+
+?>
+
+<?php
+
+   $select = mysqli_query($conn, "SELECT * FROM product");
+   //$product_id1=$_GET['product_id'];
+   
+?>
+
+<!-------------Single product details----------------->
 <div class="small-container single-product">
-    <div class="row">
-        <div class="col-2">
-            <img src="../eShopping/images/gallery-1.jpg" width="100%" 
-            id="ProductImg" >
+   <h2 class="title">Product Details</h2>    
+
+   <div class="row">
+       <?php while($row = mysqli_fetch_assoc($select)){ ?>
+
+        <form action="" method="post">
+       <div class="col-4">
+
+        <div class ="col-2">
+        <img class="image" src="uploaded_img/<?php echo $row['image']; ?>" height="100" alt="">
         </div>
+
         <div class="col-2">
-            <p>Home / T-Shirt</p>
-            <h1>Red Printed T-Shirt by HRX</h1>
-            <h4>Ksh 50.00</h4>
-            <select>
+            <h4><?php echo $row['name']; ?></h4>
+            <p>Ksh<?php echo $row['price']; ?>/-</p>
+            <p><?php echo $row['product_details']; ?></p>
+            <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>">
+            <input type="hidden" name="product_name" value="<?php echo $row['name']; ?>">
+            <input type="hidden" name="unit_price" value="<?php echo $row['price']; ?>">
+            <input type="hidden" name="product_image" value="<?php echo $row['image']; ?>">
+            <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
+        </div>
+
+       </div>
+        </form>
+        <?php } ?>
+    </div>
+            <!---<select>
                 <option>Select Size</option>
                 <option>XXL</option>
                 <option>XL</option>
                 <option>Large</option>
                 <option>Medium</option>
                 <option>Small</option>
-            </select>
-            <input type="number" value="1">
-            <a href="" class="btn">Add to Cart</a>
-        </div>
-    </div>
-</div>
-
-<!-------------products----------->
-<div class="small-container">
-    <h2 class="title">Related products</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="../eShopping/pexels-ryutaro-tsukata-5746098.jpg">
-            <h4>Black <br>Socks</br></h4>
-            <p>Ksh100.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-mikhail-nilov-7682670.jpg">
-            <h4>Red <br>Dress</br></h4>
-            <p>Ksh400.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-ogo-1469496.jpg">
-            <h4>Black <br>Mini Skirt</br></h4>
-            <p>Ksh450.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-ogo-3597931.jpg">
-            <h4>Purple <br>Trenchcoat</br></h4>
-            <p>Ksh1000.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-ogo-1822947.jpg">
-            <h4>Multi-colored <br>Blouse</br></h4>
-            <p>Ksh750.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-omar-lópez-1192601.jpg">
-            <h4>Adidas Black <br>Jacket</br></h4>
-            <p>Ksh1800.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-amina-filkins-5559985.jpg">
-            <h4>Children <br>Longsleeves</br></h4>
-            <p>Ksh500.00</p>
-        </div>
-
-        <div class="col-4">
-            <img src="../eShopping/pexels-mikhail-nilov-7624298.jpg">
-            <h4>Summer <br>Shirt</br></h4>
-            <p>Ksh900.00</p>
-        </div>
-    </div>
-
+            </select>--->
 </div>
 
 <!--------------footer------>

@@ -1,6 +1,8 @@
 <?php
 require("connection.php");
 
+mysqli_query($conn, "DELETE FROM product");
+
 if(isset($_POST['add_to_cart']))
 {
     session_start();
@@ -30,6 +32,21 @@ if(isset($_POST['add_to_cart']))
        $message[] = 'Product added to cart succesfully!';
     }
  
+};
+
+if(isset($_POST['add_to_product']))
+{
+    $product_id=$_POST['product_id'];
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['unit_price'];
+    $product_image = $_POST['product_image'];
+    $product_details= $_POST['product_description'];
+    $product_quantity = 1;
+
+    $insert_product = mysqli_query($conn, "INSERT INTO product(name, product_id, price, image, product_details) 
+       VALUES('$product_name','$product_id', '$product_price', '$product_image', '$product_details')");
+
+    header('location:Productspage.php');
 };
 
 
@@ -102,7 +119,9 @@ if(isset($message)){
             <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>">
             <input type="hidden" name="unit_price" value="<?php echo $row['unit_price']; ?>">
             <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>">
-            <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
+            <input type="hidden" name="product_description" value="<?php echo $row['product_description']; ?>">
+            <input type="submit" class="btn" value="Add to Cart" name="add_to_cart"><br>
+            <input type="submit" class="btn" value="View Details" name="add_to_product">
         </div>
         </form>
         <?php } ?>

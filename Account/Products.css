@@ -82,12 +82,15 @@ nav ul li a
 }
 .btn {
     display: inline-block;
-    background:linear-gradient(to right,#ff105f,#ffad06);
+    background:
+    linear-gradient(to right,#ff105f,#ffad06);
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
+    margin-bottom: 0px;
+    margin-top: 6px;
 }
 
 .btn:hover {
@@ -198,6 +201,11 @@ img
  {
     background-color:#eee;
  }
+
+ /*--.br
+ {
+    margin-bottom: 5%;
+ }----*/
 
 /*---------footer--------*/
 

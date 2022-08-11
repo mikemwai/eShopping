@@ -1,6 +1,8 @@
 <?php
 require("connection.php");
 
+mysqli_query($conn, "DELETE FROM product");
+
 if(isset($_POST['add_to_cart']))
 {
     session_start();
@@ -31,6 +33,20 @@ if(isset($_POST['add_to_cart']))
  
 };
 
+if(isset($_POST['add_to_product']))
+{
+    $product_id=$_POST['product_id'];
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['unit_price'];
+    $product_image = $_POST['product_image'];
+    $product_details= $_POST['product_description'];
+    $product_quantity = 1;
+
+    $insert_product = mysqli_query($conn, "INSERT INTO product(name, product_id, price, image, product_details) 
+       VALUES('$product_name','$product_id', '$product_price', '$product_image', '$product_details')");
+
+    header('location:Productspage.php');
+};
 
 ?>
 
@@ -89,21 +105,26 @@ if(isset($message)){
 <div class="small-container">
     <h2 class="title">Pets</h2>
     
-    <div onclick="window.location.href='';" class="row">
+    <div class="row">
        <?php while($row = mysqli_fetch_assoc($select)){ ?>
+
         <form action="" method="post">
         <div class="col-4">
         <img class="image" src="uploaded_img/<?php echo $row['product_image']; ?>" height="100" alt="">
             <h4><?php echo $row['product_name']; ?></h4>
             <p><?php echo $row['subcategory_name']; ?></p>
             <p>Ksh<?php echo $row['unit_price']; ?>/-</p>
+            <!---<p><?php //echo $row['product_description']; ?></p>---->
             <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>">
             <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>">
             <input type="hidden" name="unit_price" value="<?php echo $row['unit_price']; ?>">
             <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>">
-            <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
+            <input type="hidden" name="product_description" value="<?php echo $row['product_description']; ?>">
+            <input type="submit" class="btn" value="Add to Cart" name="add_to_cart"><br>
+            <input type="submit" class="btn" value="View Details" name="add_to_product">
         </div>
         </form>
+        
         <?php } ?>
     </div>
 </div>
