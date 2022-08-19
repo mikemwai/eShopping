@@ -22,10 +22,19 @@
                         <li><a href="../About/About.php">About</a></li>
                         <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                         <li><a href="../Account/Account.php">Account</a></li>
+                        <!--<form action="" class="search-bar-container" id="search-form">
+                        <input type="search" id="search-box" placeholder="search here...">
+                        <img src="../Account/Searchicon.png" class="icon" id="image">
+                         </form>------>
                     </ul>
-            </nav>
-    
-                <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
+                </nav>
+
+                <form action="" class="">
+                            <input type="search" placeholder="search here...">
+                </form>
+
+            <!--<img src="../Account/Searchicon.png" class="icon" id="search-icon">---->
+                <img id="image" onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
                 <img src="../eShopping/images/menu.png" class="menu-icon"
                      onclick="menu-toggle()">
             </div>
@@ -161,5 +170,13 @@
         <p class="copyright">&#169; 2022 eShopping</p>
     </div>
 </div>
+
+<!--<script>
+   document.querySelector('#search-icon').onclick = () =>
+   {
+    document.querySelector('#search-form').classlist.toggle('active');
+   }
+</script>---->
+
 </body>
 </html>

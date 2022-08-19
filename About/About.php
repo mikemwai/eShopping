@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>eShopping | Aboutpage</title>
-    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="About1.css">
 </head>
 <body>
 
@@ -23,12 +23,10 @@
                         <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                         <li><a href="../Account/Account.php">Account</a></li>
                     </ul>
-            </nav>
+                </nav>
     
                 <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
-                <img src="../eShopping/images/menu.png" class="menu-icon"
-                     onclick="menu-toggle()">
-            </div>
+                <img src="../eShopping/images/menu.png" class="menu-icon" onclick="menu-toggle()">
         </div>
     </div>
 </div>
@@ -36,14 +34,14 @@
 <!--------------About------------>
 <h2 class="title">About Us</h2>
 <div class="row">
-            <div class="col-2">
-                <h1>Welcome to eShopping platform today!</h1><br>
-                <p>
-                    The platform is an effective way of allowing traders to sell their products to customers. 
-                    This is very beneficial especially during the pandemic period where we have to minimize the amount of movement.
-                    Business can go on as usual without any interruptions whatsoever!
-                </p>
-            </div>
+    <div class="col-2">
+        <h1>Welcome to eShopping platform today!</h1><br>
+          <p>
+            The platform is an effective way of allowing traders to sell their products to customers. 
+            This is very beneficial especially during the pandemic period where we have to minimize the amount of movement.
+            Business can go on as usual without any interruptions whatsoever!
+            </p>
+    </div>
 </div>
 
 
