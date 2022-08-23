@@ -9,17 +9,18 @@
     $category_name=$_POST['category_name'];
     $product_description=$_POST['product_description'];
     $available_quantity=$_POST['available_quantity'];
+    $product_keywords=$_POST['product_keywords'];
     $product_image = $_FILES['product_image']['name'];//Adding image to database(name)
     $product_image_tmp_name = $_FILES['product_image']['tmp_name'];
     $product_image_folder = 'uploaded_img/'.$product_image;
  
-    if(empty($product_name) || empty($product_price) || empty($available_quantity) || empty($category_name) || empty($product_description) || empty($subcategory_name) || empty($product_image))
+    if(empty($product_name) || empty($product_price) || empty($available_quantity) || empty($category_name) || empty($product_description) || empty($subcategory_name) || empty($product_image) || empty($product_keywords))
     {
        $message[] = 'please fill out all';
     }
     else
     {
-       $insert = "INSERT INTO tbl_product(product_name,unit_price,product_image,product_description,available_quantity,subcategory_name,category_name) VALUES('$product_name', '$product_price', '$product_image', '$product_description','$available_quantity','$subcategory_name','$category_name')";
+       $insert = "INSERT INTO tbl_product(product_name,unit_price,product_image,product_description,available_quantity,subcategory_name,category_name,product_keywords) VALUES('$product_name', '$product_price', '$product_image', '$product_description','$available_quantity','$subcategory_name','$category_name', '$product_keywords')";
        $insert1= "INSERT INTO tbl_productimages(product_image) VALUES('$product_image')";
        $upload = mysqli_query($conn,$insert);
        $upload1= mysqli_query($conn,$insert1);
@@ -70,10 +71,6 @@ if(isset($message))
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="../Homepage/home.php">Home</a></li>
-                        <li><a href="../Homepage/Shoppage.php">Shop</a></li>
-                        <li><a href="../About/About.php">About</a></li>
-                        <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                         <li><a href="Logout.php">Logout</a></li>
                     </ul>
             </nav>
@@ -130,6 +127,7 @@ if(isset($message))
             <option value="Children">Children</option>
             <option value="Pets">Pets</option>
        </select><br>
+      <input type="text" placeholder="enter product keywords" name="product_keywords" class="box">
       <input type="file" accept="image/png, image/jpeg, image/jpg, image/webp" name="product_image" class="box">
       <input type="submit" class="btn" name="add_product" value="add product">
      </form>
@@ -153,6 +151,7 @@ if(isset($message))
             <th>subcategory name</th>
             <th>category name</th>
             <th>available quantity</th>
+            <th>product keywords</th>
             <th>action</th>
          </tr>
          </thead>
@@ -166,6 +165,7 @@ if(isset($message))
             <td><?php echo $row['subcategory_name']; ?></td>
             <td><?php echo $row['category_name']; ?></td>
             <td><?php echo $row['available_quantity']; ?></td>
+            <td><?php echo $row['product_keywords']; ?></td>
             <td>
                <a href="admin_update(Products).php?edit=<?php echo $row['product_id']; ?>" class="btn"> edit </a>
                <a href="admin_page(Products).php?delete=<?php echo $row['product_id']; ?>" class="btn"> delete </a>

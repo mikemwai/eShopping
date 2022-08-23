@@ -15,13 +15,13 @@ if(isset($_POST['update_subcategory']))
        $message[] = 'please fill out all';   
    }else{
 
-      $update_data = "UPDATE tbl_subcategory SET subcategory_name='$subcategory_name', category_id='$category_id',
+      $update_data = "UPDATE tbl_subcategories SET subcategory_name='$subcategory_name', category_id='$category_id'
       WHERE subcategory_id = '$subcategory_id'";
       $upload = mysqli_query($conn, $update_data);
 
       if($upload)
       {
-         header('location:admin_page(Products).php');
+         header('location:admin_page(Subcategory).php');
       }
       else
       {

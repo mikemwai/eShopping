@@ -62,7 +62,7 @@ if(isset($_POST['add_to_cart']))
                     </ul>
             </nav>
     
-                <img src="../eShopping/images/cart.png" width="30px" height="30px">
+                <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
                 <img src="../eShopping/images/menu.png" class="menu-icon"
                      onclick="menu-toggle()">
             </div>

@@ -1,10 +1,63 @@
+<?php
+require("../Account/connection.php");
+
+mysqli_query($conn, "DELETE FROM product");
+
+if(isset($_POST['add_to_cart']))
+{
+    session_start();
+
+    $user_id=$_SESSION['user_id'];
+    
+    if(!isset($_SESSION['user_id'])){
+        header('location:../Account/Account.php');
+     }
+
+    $product_id=$_POST['product_id'];
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['unit_price'];
+    $product_image = $_POST['product_image'];
+    $product_quantity = 1;
+ 
+    $select_cart = mysqli_query($conn, "SELECT * FROM tbl_cart WHERE name = '$product_name' AND user_id='$user_id'");
+ 
+    if(mysqli_num_rows($select_cart) > 0)
+    {
+       $message[] = 'Product already added to cart!';
+    }
+    else
+    {
+       $insert_product = mysqli_query($conn, "INSERT INTO tbl_cart(name, user_id, product_id, price, image, quantity) VALUES('$product_name', '$user_id', '$product_id', '$product_price', '$product_image', '$product_quantity')");
+       $message[] = 'Product added to cart succesfully!';
+    }
+ 
+};
+
+if(isset($_POST['add_to_product']))
+{
+    $product_id=$_POST['product_id'];
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['unit_price'];
+    $product_image = $_POST['product_image'];
+    $product_details= $_POST['product_description'];
+    $product_quantity = 1;
+
+    $insert_product = mysqli_query($conn, "INSERT INTO product(name, product_id, price, image, product_details) 
+       VALUES('$product_name','$product_id', '$product_price', '$product_image', '$product_details')");
+
+    header('location:../Account/Productspage.php');
+};
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
-    <title>eShopping | Shoppage</title>
-    <link rel="stylesheet" href="Shoppage.css">
+    <title>eShopping | Results Page</title>
+    <!--<link rel="stylesheet" href="Shoppage.css">--->
+    <link rel="stylesheet" href="../Account/Products.css">
 </head>
 <body>
 
@@ -43,65 +96,74 @@
     </div>
 </div>
 
+<?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '<div class="message"><span>'.$message.'</span> </div>';
+   };
+};
+
+?>
+
 <!-------Categories------->
 <div class="small-container">
-    <h2 class="title">Shop With Us</h2>
+    <h2 class="title">Results Page</h2>
     <div class="row">
-        <div onclick="window.location.href='../Account/Menspage.php';" class="col-4">
-            <img src="../eShopping/pexels-teddy-joseph-2955375.jpg">
-            <h4>Men</h4>
-       </div>
 
-        <div onclick="window.location.href='../Account/Ladiespage.php';" class="col-4">
-            <img src="../eShopping/pexels-ogo-3597931.jpg">
-            <h4>Ladies</h4>
-        </div>
+        <?php
+        require("../Account/connection.php");
 
-        <div onclick="window.location.href='../Account/Childrenspage.php';" class="col-4">
-            <img src="../eShopping/pexels-amina-filkins-5559985.jpg">
-            <h4>Children</h4>
-        </div>
+        if(isset($_GET['search']))
+        {
+            $searchquery=$_GET['user_query'];
+            $getproducts="SELECT * FROM tbl_product WHERE product_keywords LIKE '%$searchquery%'";
+            $runproducts=mysqli_query($conn,$getproducts);
 
-        <div onclick="window.location.href='../Account/Petspage.php';" class="col-4">
-            <img src="Pets1.jpg">
-            <h4>Pets</h4>
-        </div>
-    </div>
-</div>
+            if(empty($getproducts))
+            {
+                $message[] = 'Product not found!';
 
-<!-------------Subcategories------------>
-<div class="small-container">
-    <h2 class="title">Subcategories</h2>
-    <div class="row">
-        <div onclick="window.location.href='../Account/Formal.php';" class="col-4">
-            <img class="image" src="Formal.jpg">
-            <h4>Formal</h4>
-       </div>
+                if(isset($message)){
+                    foreach($message as $message){
+                       echo '<div class="message"><span>'.$message.'</span> </div>';
+                    };
+                 };
+                //echo "Product not found!";
+            }
+            else
+            {
+            while($rowproducts=mysqli_fetch_array($runproducts))
+            {
+             
+                $product_id=$rowproducts['product_id'];
+                $product_name = $rowproducts['product_name'];
+                $product_price = $rowproducts['unit_price'];
+                $product_image = $rowproducts['product_image'];
+                $subcategory_name=$rowproducts['subcategory_name'];
+                $product_description= $rowproducts['product_description'];
+            ?>
+                <div class="col-4">
+                <img class="image" src="../Account/uploaded_img/<?php echo $product_image; ?>" height="100" alt="">
+                    <h4><?php echo $product_name; ?> </h4>
+                    <p><?php  echo $subcategory_name; ?></p>
+                    <p>Ksh<?php echo $product_price; ?>/-</p>
 
-        <div onclick="window.location.href='../Account/Casual.php';" class="col-4">
-            <img class="image" src="Casual.jpg">
-            <h4>Casual</h4>
-        </div>
-
-        <div onclick="window.location.href='../Account/Sports.php';" class="col-4">
-            <img class="image" src="Sports.jpg">
-            <h4>Sports</h4>
-        </div>
-
-        <div onclick="window.location.href='../Account/Dogs.php';" class="col-4">
-            <img class="image" src="Pets1.jpg">
-            <h4>Dogs</h4>
-        </div>
-
-        <div onclick="window.location.href='../Account/Cats.php';" class="col-4">
-            <img class="image" src="Cat2.png">
-            <h4>Cats</h4>
-        </div>
-
-        <div onclick="window.location.href='../Account/Others.php';" class="col-4">
-            <img class="image" src="Rabbit1.webp">
-            <h4>Others</h4>
-        </div>
+                <form action="" method="post">
+                <input type="hidden" name="product_id" value="<?php echo $rowproducts['product_id']; ?>">
+                <input type="hidden" name="product_name" value="<?php echo $rowproducts['product_name']; ?>">
+                <input type="hidden" name="unit_price" value="<?php echo $rowproducts['unit_price']; ?>">
+                <input type="hidden" name="product_image" value="<?php echo $rowproducts['product_image']; ?>">
+                <input type="hidden" name="product_description" value="<?php echo $rowproducts['product_description']; ?>">
+                <input type="submit" class="btn" value="Add to Cart" name="add_to_cart"><br>
+                <input type="submit" class="btn" value="View Details" name="add_to_product">
+                </form>
+                </div>
+            <?php 
+            }
+          }
+        }
+        ?>
     </div>
 </div>
 

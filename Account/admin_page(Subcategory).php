@@ -57,10 +57,6 @@ if(isset($message)){
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="../Homepage/home.php">Home</a></li>
-                        <li><a href="../Homepage/Shoppage.php">Shop</a></li>
-                        <li><a href="../About/About.php">About</a></li>
-                        <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                         <li><a href="Logout.php">Logout</a></li>
                     </ul>
             </nav>

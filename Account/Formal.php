@@ -77,7 +77,12 @@ if(isset($_POST['add_to_product']))
                     <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                     <li><a href="../Account/Account.php">Account</a></li>
                 </ul>
-        </nav>
+            </nav>
+
+            <form action="results.php" class="" method="get">
+                    <input type="search" name="user_query" placeholder="search here...">
+                    <input type="submit" name="search" value="Search">
+            </form>
 
             <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
             <img src="../eShopping/images/menu.png" class="menu-icon"

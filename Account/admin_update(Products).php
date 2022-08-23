@@ -12,18 +12,19 @@ if(isset($_POST['update_product'])){
    $category_name=$_POST['category_name'];
    $product_description=$_POST['product_description'];
    $available_quantity=$_POST['available_quantity'];
+   $product_keywords=$_POST['product_keywords'];
    $product_image = $_FILES['product_image']['name'];
    $product_image_tmp_name = $_FILES['product_image']['tmp_name'];
    $product_image_folder = 'uploaded_img/'.$product_image;
 
-   if(empty($product_name) || empty($product_price) || empty($available_quantity) || empty($category_name) || empty($product_description) || empty($subcategory_name) || empty($product_image))
+   if(empty($product_name) || empty($product_price) || empty($available_quantity) || empty($category_name) || empty($product_description) || empty($subcategory_name) || empty($product_image) || empty($product_keywords))
    {
    $message[] = 'please fill out all!';    
    }
    else
    {
       $update_data = "UPDATE tbl_product SET product_name='$product_name', unit_price='$product_price', product_image='$product_image',product_description='$product_description',available_quantity='$available_quantity',
-      subcategory_name='$subcategory_name', category_name='$category_name'  WHERE product_id = '$product_id'";
+      subcategory_name='$subcategory_name', category_name='$category_name', product_keywords='$product_keywords'  WHERE product_id = '$product_id'";
       $upload = mysqli_query($conn, $update_data);
 
       if($upload){
@@ -90,6 +91,7 @@ if(isset($_POST['update_product'])){
             <option value="Pets">Pets</option>
       </select><br>
       <input type="int" placeholder="enter available quantity" name="available_quantity" value="<?php echo $row['available_quantity']; ?>" class="box">
+      <input type="text" placeholder="enter product keywords" name="product_keywords" value="<?php echo $row['product_keywords']; ?>" class="box">
       <input type="file" class="box" name="product_image"  accept="image/png, image/jpeg, image/jpg, image/webp" value="<?php echo $row['product_image']; ?>">
       <input type="submit" value="update product" name="update_product" class="btn">
       <a href="admin_page(Products).php" class="btn">go back!</a>

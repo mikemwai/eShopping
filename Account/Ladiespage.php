@@ -58,7 +58,7 @@ if(isset($_POST['add_to_product']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
-    <title>eShopping | Womenspage</title>
+    <title>eShopping | Ladiespage</title>
     <link rel="stylesheet" href="Products.css">
 </head>
 <body>
@@ -99,13 +99,13 @@ if(isset($message)){
 
 <?php
 
-   $select = mysqli_query($conn, "SELECT * FROM tbl_product WHERE category_name='Women'");
+   $select = mysqli_query($conn, "SELECT * FROM tbl_product WHERE category_name='Ladies'");
    
 ?>
 
 <!-----------Products--------->
 <div class="small-container">
-    <h2 class="title">Women's Products</h2>
+    <h2 class="title">Ladies' Products</h2>
     
     <div onclick="window.location.href='';" class="row">
        <?php while($row = mysqli_fetch_assoc($select)){ ?>

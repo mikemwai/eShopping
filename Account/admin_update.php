@@ -14,7 +14,7 @@ if(isset($_POST['update_category']))
        $message[] = 'please fill out all';   
    }else{
 
-      $update_data = "UPDATE tbl_category SET category_name='$category_name',
+      $update_data = "UPDATE tbl_categories SET category_name='$category_name'
       WHERE category_id = '$category_id'";
       $upload = mysqli_query($conn, $update_data);
 
