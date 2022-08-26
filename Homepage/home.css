@@ -333,7 +333,8 @@ small {
 .col-5 img {
     width: 100%;
     cursor: pointer;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
+    background-color: rgb(255, 255, 255);
 }
 
 .col-5 img:hover {

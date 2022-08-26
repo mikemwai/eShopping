@@ -235,7 +235,7 @@
             </div>
 
             <div class="col-5">
-                <img src="../eShopping/Adidas.png">
+                <img src="../eShopping/Adidas1.png">
             </div>
 
             <div class="col-5">
