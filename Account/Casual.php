@@ -81,10 +81,11 @@ if(isset($_POST['add_to_product']))
                 </ul>
         </nav>
 
-              <form action="results.php" class="" method="get">
-                    <input type="search" name="user_query" placeholder="search here...">
-                    <input type="submit" name="search" value="Search">
-                </form>
+        <form action="results.php" class="" method="get">
+                    <input type="search" name="user_query" placeholder="Search here..." class="searchbar">
+                    <button type="submit" name="search" class="btn2"><img src="../Account/Searchicon.png" class="icon" id="image"></button>
+                    <!--<input type="submit" name="search" value="Search">--->
+                </form> 
 
             <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
             <img src="../eShopping/images/menu.png" class="menu-icon"
