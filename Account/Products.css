@@ -104,6 +104,29 @@ nav ul li a
     display: none;
 }
 
+.icon
+{
+    height: 26px;
+    width: 25px;
+    margin-left:0px;
+    margin-top: 0px;
+}
+
+.btn2
+{
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.searchbar
+{
+    width:auto;
+    height: 24px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
 /*----------Utility stylings-------*/
 .small-container {
     max-width: 1080px;
