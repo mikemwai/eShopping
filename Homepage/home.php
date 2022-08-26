@@ -243,9 +243,10 @@
     <div class="small-container">
         <div class="row">
             <div class="col-6">
-                <h2 class="title">Subscribe To Our Newsletter</h2>
+                <h2 class="title1">Subscribe To Our Newsletter</h2>
+                <p>Subscribe to our newsletter to receive updates on awesome offers!</p><br>
                 <input  type="email" id="email" name="email" placeholder="Enter your Email Address"></p>
-                <button type="submit" class="btn">SUBSCRIBE &#8594;</button>
+                <button type="submit" class="btn1">SUBSCRIBE &#8594;</button>
             </div>
         </div>
     </div>

@@ -305,7 +305,7 @@ small {
     font-size: 16px;
 }
 
-/*Benefits*/
+/*------Benefits------*/
 .testimonies {
     padding-top: 100px;
 }
@@ -359,6 +359,50 @@ small {
     padding:0 20px;
 }
 
+.subscribe
+{
+    background-color: #282828;
+}
+
+.subscribe h2
+{
+    color:#fff;
+}
+
+.title1
+{
+    text-align: center;
+    margin: 0 auto 20px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title1::after
+{
+    content: '';
+    /*background: #ff523b;*/
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn1
+{
+    display: inline-block;
+    background:#282828;
+    border-color:#fff;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
 /*------brands------*/
 
 .brands {
@@ -373,16 +417,17 @@ small {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.5s;
+    filter: grayscale(100%); 
 }
 
 .col-5 img {
     width: 100%;
     cursor: pointer;
-    filter: grayscale(100%);
+
     background-color: rgb(255, 255, 255);
 }
 
-.col-5 img:hover {
+.col-5:hover {
     filter: grayscale(0);
 }
 
