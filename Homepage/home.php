@@ -52,7 +52,7 @@
             <h4>Men</h4>
     </div>
 
-        <div onclick="window.location.href='../Account/Womenspage.php';" class="col-4">
+        <div onclick="window.location.href='../Account/Ladiespage.php';" class="col-4">
             <img src="../eShopping/pexels-ogo-3597931.jpg">
             <h4>Women</h4>
            
@@ -151,22 +151,23 @@
 <!-------------testimonies-------->
 <div class="testimonies">
     <div class="small-container">
+         <h2 class="title">Testimonies</h2>       
         <div class="row">
-            <div class="col-3">
+            <div class="testimonies1">
                 <p>A cost-effective and simple solution for
                     getting all your clothes online.</p>
                 <img src="../eShopping/pexels-mwabonje-1820559.jpg">
                 <h3>Betty Maina</h3>
             </div>
 
-            <div class="col-3">
+            <div class="testimonies1">
                 <p>Fast and easy to purchase clothes with
                     excellent customer service too!</p>
                 <img src="../eShopping/pexels-mwabonje-2222755.jpg">
                 <h3>Bakari Ali</h3>
             </div>
 
-            <div class="col-3">
+            <div class="testimonies1">
                 <p>The BEST place to buy clothes online for
                     your loved ones with free shipping countrywide too!</p>
                 <img src="../eShopping/pexels-mwabonje-2680369.jpg">
@@ -192,7 +193,7 @@
             </div>
 
             <div class="col-3">
-                Safe <br>Shipping and Packaging</br>
+                Safe Shipping<br> and Packaging</br>
                 <img class="image" src="SafeShipping.webp">
             </div>
 
@@ -205,25 +206,13 @@
 </div>
 </div>
 
-<!----------Subscribe---------->
-<div class="subscribe">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-6">
-                <h2 class="title">Subscribe To Our Newsletter</h2>
-                <input  type="email" id="email" name="email" placeholder="Enter your Email Address"></p>
-                <button type="submit" class="btn">SUBSCRIBE &#8594;</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--------partnerships------->
 <div class="brands">
     <div class="small-container">
+            <h2 class="title">Partnerships</h2> 
         <div class="row">
             <div class="col-5">
-                <img src="../eShopping/Nike.jpg">
+                <img href="www.nike.com" src="../eShopping/Nike.jpg">
             </div>
 
             <div class="col-5">
@@ -244,6 +233,19 @@
 
             <div class="col-5">
                 <img src="../eShopping/Lacoste.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Subscribe---------->
+<div class="subscribe">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="title">Subscribe To Our Newsletter</h2>
+                <input  type="email" id="email" name="email" placeholder="Enter your Email Address"></p>
+                <button type="submit" class="btn">SUBSCRIBE &#8594;</button>
             </div>
         </div>
     </div>

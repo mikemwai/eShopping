@@ -147,17 +147,17 @@ p {
     margin: 70px 0;
 }
 
-.col-3 {
+/*.col-3 {
     flex-basis: 30%;
-    min-width: 250px;
+    min-width: 100px;
     margin-bottom: 30px;
-    width: 200px;
-    height: 280px;
+    /* width: 160px; */
+    /* height: 280px; 
 }
 
 .col-3 img {
     width: 100%;
-}
+}*/
 
 .small-container {
     max-width: 1080px;
@@ -268,14 +268,53 @@ small {
 }
 
 /*-----------testimonies-------*/
+.testimonies1
+{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    padding: 20px 1px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
 
+.testimonies1 img
+{
+    width: 70px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonies1:hover
+{
+    transform: translateY(-10px);
+}
+
+.testimonies1 p
+{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonies1
+{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/*Benefits*/
 .testimonies {
     padding-top: 100px;
 }
 
 .testimonies .col-3 {
+    width: 198px;
+    height: 250px;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 1px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.5s;
@@ -328,12 +367,18 @@ small {
 
 .col-5 {
     width: 160px;
+    height: 170px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
 }
 
 .col-5 img {
     width: 100%;
     cursor: pointer;
-    filter: grayscale(80%);
+    filter: grayscale(100%);
     background-color: rgb(255, 255, 255);
 }
 
