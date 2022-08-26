@@ -80,7 +80,7 @@ if(isset($_POST['add_to_product']))
                 </ul>
         </nav>
 
-        <form action="results.php" class="" method="get">
+        <form action="../Homepage/results.php" class="" method="get">
                     <input type="search" name="user_query" placeholder="Search here..." class="searchbar">
                     <button type="submit" name="search" class="btn2"><img src="../Account/Searchicon.png" class="icon" id="image"></button>
                     <!--<input type="submit" name="search" value="Search">--->
