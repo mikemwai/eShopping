@@ -76,49 +76,49 @@
 <div class="small-container">
     <h2 class="title">Products</h2>
     <div class="row">
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-ryutaro-tsukata-5746098.jpg">
             <!---<h4>Black <br>Socks</br></h4>
             <p>Ksh100.00</p>---->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-mikhail-nilov-7682670.jpg">
             <!--<h4>Red <br>Dress</br></h4>
             <p>Ksh400.00</p>--->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-ogo-1469496.jpg">
             <!---<h4>Black <br>Mini Skirt</br></h4>
             <p>Ksh450.00</p>--->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-ogo-3597931.jpg">
             <!---<h4>Purple <br>Trenchcoat</br></h4>
             <p>Ksh1000.00</p>--->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-ogo-1822947.jpg">
             <!---<h4>Multi-colored <br>Blouse</br></h4>
             <p>Ksh750.00</p>---->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-omar-lópez-1192601.jpg">
             <!---<h4>Adidas Black <br>Jacket</br></h4>
             <p>Ksh1800.00</p>--->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-amina-filkins-5559985.jpg">
             <!---<h4>Children <br>Longsleeves</br></h4>
             <p>Ksh500.00</p>--->
         </div>
 
-        <div class="col-4">
+        <div onclick="window.location.href='Shoppage.php';" class="col-4">
             <img src="../eShopping/pexels-mikhail-nilov-7624298.jpg">
             <!--<h4>Summer <br>Shirt</br></h4>
             <p>Ksh900.00</p>--->
@@ -211,29 +211,41 @@
     <div class="small-container">
             <h2 class="title">Partnerships</h2> 
         <div class="row">
+            <a href="https://www.nike.com/" target="blank">
             <div class="col-5">
-                <img href="www.nike.com" src="../eShopping/Nike.jpg">
+                <img src="../eShopping/Nike.jpg">
             </div>
+            </a>
 
+            <a href="https://www.nike.com/jordan/" target="blank">
             <div class="col-5">
                 <img src="../eShopping/Jordan1.jpg">
             </div>
+            </a>
 
+            <a href="https://www.coca-cola.co.ke/" target="blank">
             <div class="col-5">
                 <img src="../eShopping/images/logo-coca-cola.png">
             </div>
+            </a>
 
+            <a href="https://www.adidas.com/ke/" target="blank">
             <div class="col-5">
                 <img src="../eShopping/Adidas1.png">
             </div>
+            </a>
 
+            <a href="https://www.paypal.com/" target="blank">
             <div class="col-5">
                 <img src="../eShopping/images/logo-paypal.png">
             </div>
+            </a>
 
+            <a href="https://www.lacoste.com/" target="blank">
             <div class="col-5">
                 <img src="../eShopping/Lacoste.jpg">
             </div>
+            </a>
         </div>
     </div>
 </div>
@@ -243,8 +255,8 @@
     <div class="small-container">
         <div class="row">
             <div class="col-6">
-                <h2 class="title1">Subscribe To Our Newsletter</h2>
-                <p>Subscribe to our newsletter to receive updates on awesome offers!</p><br>
+                <h2 class="title1">Subscribe Newsletter</h2>
+                <p>Sign up to receive our newsletter containing updates on awesome offers!</p><br>
                 <input  type="email" id="email" name="email" placeholder="Enter your Email Address"></p>
                 <button type="submit" class="btn1">SUBSCRIBE &#8594;</button>
             </div>
