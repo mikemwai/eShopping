@@ -101,15 +101,31 @@ a
 
 .menu-icon {
     width: 28px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     display: none;
 }
 
 .icon
 {
-    height:28px;
-    width: 28px;
-    margin-left: 20px;
+    height: 26px;
+    width: 25px;
+    margin-left:0px;
+    margin-top: 0px;
+}
+
+.btn2
+{
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.searchbar
+{
+    width:auto;
+    height: 24px;
+    padding-top: 10px;
+    padding-bottom: 2px;
 }
 
 /*-----#search-icon:hover
