@@ -110,9 +110,12 @@ if(mysqli_num_rows($result) > 0)
     <div class="header">
         <div class="container">
             <div class="navbar">
+                <a href="../Homepage/home.php">
                 <div class="logo">
                     <img src="../Homepage/Logo(White).png" width="200px">
                 </div>
+                </a>
+
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="../Homepage/home.php">Home</a></li>
