@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>eShopping | Contactpage</title>
     <link rel="stylesheet" href="../Homepage/Shoppage.css">
-    <link rel="stylesheet" href="../Account/Admin.css">
+    <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
 
@@ -24,12 +24,12 @@
                         <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                         <li><a href="../Account/Account.php">Account</a></li>
                     </ul>
-            </nav>
+                </nav>
     
                 <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
                 <img src="../eShopping/images/menu.png" class="menu-icon"
                      onclick="menu-toggle()">
-            </div>
+            
         </div>
     </div>
 </div>
