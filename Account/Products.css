@@ -10,12 +10,16 @@ body {
 }
 
 /*-----------Navigation-------*/
+.header
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
 
 .navbar {
     font-size: 120%;
-    width: 95%;
+    width: 90%;
     margin: auto;
-    padding: 35px 0;
+    padding: 14.8px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,6 +84,7 @@ nav ul li a
     left: 50%;
     transform: translateX(-50%);
 }
+
 .btn {
     display: inline-block;
     background:
@@ -91,6 +96,7 @@ nav ul li a
     transition: background 0.5s;
     margin-bottom: 0px;
     margin-top: 6px;
+    border:none;
 }
 
 .btn:hover {
