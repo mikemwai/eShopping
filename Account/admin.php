@@ -49,6 +49,7 @@ if(isset($message)){
    }
 }
 ?>
+<!---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,26 +57,23 @@ if(isset($message)){
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <link rel="stylesheet" href="../Homepage/Shoppage.css">
 </head>
-<body>
+<body>--->
 
 <!---------Navigation Bar--------->
-<div style="margin: 0 auto" class="header">
-    <div style="margin: 0 auto" class="container">
-        <div class="navbar">
-                <div class="logo">
-                    <img src="../Homepage/Logo.png" width="200px">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="Logout.php">Logout</a></li>
-                    </ul>
-            </nav>
+<div style="" class="header">
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Homepage/Logo.png" width="200px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="Logout.php">Logout</a></li>
+            </ul>
+        </nav>
     
                 <!--<img src="../eShopping/images/cart.png" width="30px" height="30px">--->
-                <img src="../eShopping/images/menu.png" class="menu-icon"
-                     onclick="menu-toggle()">
-            </div>
-        </div>
+        <img src="../eShopping/images/menu.png" class="menu-icon"
+            onclick="menu-toggle()">
     </div>
 </div>
 
@@ -92,14 +90,13 @@ if(isset($message)){
                         <li><a href="admin_page(Users).php">Users</a></li>
                         <li><a href="admin_page(Orders).php">Orders</a></li>
                     </ul>
-                 </nav>
-            </div>
+                </nav>
         </div>
     </div>
 </div>
 
 
-<div style="margin: 0 auto"class="container">
+<div style="margin: 0 auto" class="container">
    <div style="margin: 0 auto" class="admin-product-form-container">
      <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
       <h3>Add new category</h3>

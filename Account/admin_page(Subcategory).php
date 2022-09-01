@@ -50,7 +50,6 @@ if(isset($message)){
 
 <!---------Navigation Bar--------->
 <div style="margin: 0 auto" class="header">
-    <div class="container">
         <div class="navbar">
                 <div class="logo">
                     <img src="../Homepage/Logo.png" width="200px">
@@ -65,8 +64,6 @@ if(isset($message)){
                 <img src="../eShopping/images/menu.png" class="menu-icon"
                      onclick="menu-toggle()">
             </div>
-        </div>
-    </div>
 </div>
 
 <h1 style="margin: 0 auto" class="title">Admin Page</h1>

@@ -7,29 +7,136 @@
   --border:.1rem solid var(--black);
 }
 
-*{
+/*{
   font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
-  outline: none; border:none;
+  outline: none; 
+  border:none;
   text-decoration: none;
   text-transform: capitalize;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 html{
   font-size: 62.5%;
   overflow-x: hidden;
 }
+
 /*-----------Navigation-------*/
+/*.navbar
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
 
 .navbar {
   font-size: 120%;
-  width: 95%;
+  width: 140%;
   margin: auto;
   padding: 35px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}*/
+
+/*nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}*/
+
+/*nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}*/
+
+/*nav ul li a
+{
+  width:180px;
+  height:60px;
+  text-decoration: none;
+  color: rgb(78, 76, 76);
+}*/
+
+/*.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #6a6969;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}*/
+
+/*.navbar ul li:hover::after {
+  width: 100%;
+}*/
+
+.navbar {
+ font-size: 120%;
+ width: 100%;
+ margin: 0;
+ padding: 14.8px 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li a
+{
+  width:180px;
+  height:60px;
+  text-decoration: none;
+  color: rgb(78, 76, 76);
+}
+
+.navbar ul li::after 
+{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #6a6969;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
 }
 
 .navbar1
@@ -49,25 +156,9 @@ html{
   text-align: center;
 }
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-}
-
 .navbar1 nav ul {
   display: inline-block;
   list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
 }
 
 .navbar1 nav ul li {
@@ -76,31 +167,12 @@ nav ul li {
   position: relative;
 }
 
-nav ul li a
-{
-  width:180px;
-  height:60px;
-  text-decoration: none;
-  color: rgb(78, 76, 76);
-}
-
 .navbar1 nav ul li a
 {
   width:180px;
   height:60px;
   text-decoration: none;
   color: rgb(78, 76, 76);
-}
-
-.navbar ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #6a6969;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
 }
 
 .navbar1 ul li::after {
@@ -112,10 +184,6 @@ nav ul li a
   left: 0;
   bottom: -10px;
   transition: 0.5s;
-}
-
-.navbar ul li:hover::after {
-  width: 100%;
 }
 
 .navbar1 ul li:hover::after {
@@ -175,6 +243,7 @@ a
   background:linear-gradient(to right,#ff105f,#ffad06);
   color:var(--white);
   text-align: center;
+  border:none;
 }
 
 .btn:hover{
@@ -230,6 +299,7 @@ a
   margin:1rem 0;
   background: var(--white);
   text-transform: none;
+  border:none;
 }
 
 .product-display{
