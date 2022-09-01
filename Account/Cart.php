@@ -51,7 +51,7 @@ if(!isset($_SESSION['last_name'])){
 
     <!---------Navigation Bar--------->
 <div class="header">
-    <div class="container">
+    <div class="container1">
         <div class="navbar">
             <a href="../Homepage/home.php">
             <div class="logo">
@@ -68,7 +68,7 @@ if(!isset($_SESSION['last_name'])){
                     <!---<li><a href="../Account/Account.php">Account</a></li>--->
                     <li><a href="Logout.php">Logout</a></li>
                 </ul>
-        </nav>
+            </nav>
 
             <!---<img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">--->
             <img src="../eShopping/images/menu.png" class="menu-icon"
