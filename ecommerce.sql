@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 30, 2022 at 08:28 PM
+-- Generation Time: Sep 05, 2022 at 09:05 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -124,6 +124,13 @@ CREATE TABLE `tbl_cart` (
   `quantity` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tbl_cart`
+--
+
+INSERT INTO `tbl_cart` (`id`, `user_id`, `product_id`, `name`, `price`, `image`, `quantity`) VALUES
+(88, 0, 4, 'Dark green T-Shirt', '500', '26.jpg', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -174,7 +181,7 @@ INSERT INTO `tbl_order` (`order_id`, `user_id`, `total_products`, `order_amount`
 (3, 28, 'White Sweatpants ( 1 ), Blue T-Shirt ( 1 )', 2300, 'Delivered', '2022-07-13 08:32:02', 'M-Pesa', '2022-07-13 08:32:02', 0),
 (4, 32, 'Bicycle ( 1 )', 10000, 'Delivered', '2022-07-13 09:19:59', 'M-Pesa', '2022-07-13 09:19:59', 0),
 (5, 4, 'Purple T-shirt ( 1 )', 500, 'Delivered', '2022-08-23 16:19:09', 'M-Pesa', '2022-08-23 16:19:09', 0),
-(6, 4, 'Dark green T-Shirt ( 4 )', 2000, 'Pending', '2022-08-23 16:45:56', 'M-Pesa', '2022-08-23 16:45:56', 0),
+(6, 4, 'Dark green T-Shirt ( 4 )', 2000, 'Delivered', '2022-08-23 16:45:56', 'M-Pesa', '2022-08-23 16:45:56', 0),
 (7, 4, 'Dark green T-Shirt ( 2 )', 1000, 'Pending', '2022-08-23 16:47:15', 'M-Pesa', '2022-08-23 16:47:15', 0);
 
 -- --------------------------------------------------------
@@ -432,8 +439,7 @@ INSERT INTO `tbl_users` (`user_id`, `first_name`, `last_name`, `email`, `passwor
 (28, 'Maria', 'Hannah', 'mhannah@gmail.com', 'mhannah', 'female', 3, 0),
 (29, 'Saumu', 'Swaleh', 'sswaleh@gmail.com', 'sswaleh', 'female', 3, 0),
 (30, 'Takeoff', 'Migos', 'tmigos@gmail.com', 'tmigos', 'male', 3, 0),
-(31, 'Treddy', 'Nzioki', 'tnzioki@gmail.com', 'tnzioki', 'male', 3, 0),
-(32, 'Raynor', 'Munen', 'rmunene@gmail.com', 'rmunene', 'male', 3, 0);
+(31, 'Treddy', 'Nzioki', 'tnzioki@gmail.com', 'tnzioki', 'male', 3, 0);
 
 -- --------------------------------------------------------
 
@@ -642,13 +648,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
 -- AUTO_INCREMENT for table `tbl_categories`

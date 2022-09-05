@@ -157,13 +157,20 @@ if(mysqli_num_rows($result) > 0)
             <img src="tw.png">
             <img src="gp.png">
         </div>
+
+        <!------------Login Form-------------->
         <form id="login" action="" method="post" class="input-group">              
                   <input type="email" id="Email" name="Email" placeholder="Email" class="input-field"></p>
                   <input type="password" id="password" name="password" placeholder="Password" class="input-field"></p>
                    <input type="submit" value="Login" name="Login" class="submit-btn"><br>
+                   <!--<p>Forgotten Password?</p>
+                   <a href="Account_update.php?edit=<?php //echo $row['user_id']; ?>">
+                   <p>Reset Password</p>--->
+                   </a>
                    <!---<p>Don't have an account? <a href="../Account/Registration.php">Register Now</a></p>--->
         </form>
 
+        <!-----------Registration Form------->
         <form id="register" action="" method="post" class="input-group">    
              <input type="text" id="fname" name="first_name" placeholder="FirstName" class="input-field"><p>
              <input type="varchar" id="lname" name="last_name" placeholder="LastName" class="input-field"></p>
