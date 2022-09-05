@@ -77,7 +77,7 @@ if(isset($_POST['update_user'])){
 
       <input type="submit" class="btn" name="update_user" value="update user">
       <a href="admin_page(Users).php" class="btn">go back!</a>
-     </form>
+   </form>
    
    <?php }; ?>
 </div>
