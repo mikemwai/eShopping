@@ -351,6 +351,13 @@ a
     text-align: center;
 }
 
+.menu-icon 
+{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
 /*---------footer--------*/
 .small-container {
   max-width: 1080px;
@@ -427,13 +434,62 @@ ul {
   text-align: center;
 }
 
+@media(max-width:700px)
+{
+    .col-2 
+    {
+        font-size: 10px;
+    }
 
+    .testimonies1
+    {
+        margin-bottom: 5%;
+    }
 
+    .col-3
+    {
+        margin-bottom: 5%;
+    }
 
+    .nav-links ul li
+    {
+       display:block;
+       margin-bottom:10px;
+       margin-top: 5px;
+    }
 
+    .nav-links
+    {
+        position:absolute;
+        background:#f44336;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:center;
+        z-index:2;
+        transition: 1s;
+    }
 
+    .icon
+    {
+        background: #f44336;;
+    }
 
+    .btn2
+    {
+        background:#f44336;;
+    }
 
+    .menu-icon
+    {
+        display:block;
+        color:#fff;
+        margin:10px;
+        font-size:15px;
+        cursor:pointer;
+    }
+}
 
 @media (max-width:991px){
 

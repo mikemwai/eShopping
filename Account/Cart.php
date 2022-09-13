@@ -60,19 +60,23 @@ if(!isset($_SESSION['last_name'])){
             </a>
 
             <nav>
+                <div class="nav-links" id="navLinks">
+                <img src="../eShopping/images/close.png" class="menu-icon"
+                 onclick="hideMenu()">
                 <ul id="MenuItems">
                     <li><a href="../Homepage/home.php">Home</a></li>
                     <li><a href="../Homepage/Shoppage.php">Shop</a></li>
                     <li><a href="../About/About.php">About</a></li>
                     <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
-                    <!---<li><a href="../Account/Account.php">Account</a></li>--->
-                    <li><a href="Logout.php">Logout</a></li>
+                    <li><a href="../Account/Account.php">Account</a></li>
+                    <li><a href="../Account/Cart.php">Cart</a></li>
                 </ul>
-            </nav>
+                </div>
+                </nav>
 
             <!---<img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">--->
-            <img src="../eShopping/images/menu.png" class="menu-icon"
-                 onclick="menu-toggle()">
+            <img src="../eShopping/images/menu(Black).png" class="menu-icon"
+                 onclick="showMenu()">
         </div>
     </div>
 </div>
@@ -231,6 +235,20 @@ $select = mysqli_query($conn, "SELECT * FROM tbl_users");
         <p class="copyright">&#169; 2022 eShopping</p>
     </div>
 </div>
+
+<!--------------JavaScript for Toggle Menu----------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+</script>
 
 </body>
 </html>
