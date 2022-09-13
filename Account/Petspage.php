@@ -72,24 +72,28 @@ if(isset($_POST['add_to_product']))
             </a>
 
             <nav>
+                <div class="nav-links" id="navLinks">
+                <img src="../eShopping/images/close.png" class="menu-icon"
+                 onclick="hideMenu()">
                 <ul id="MenuItems">
                     <li><a href="../Homepage/home.php">Home</a></li>
                     <li><a href="../Homepage/Shoppage.php">Shop</a></li>
                     <li><a href="../About/About.php">About</a></li>
                     <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                     <li><a href="../Account/Account.php">Account</a></li>
+                    <li><a href="../Account/Cart.php">Cart</a></li>
                 </ul>
-        </nav>
-
-        <form action="../Homepage/results.php" class="" method="get">
+                <form action="results.php" class="search" method="get">
                     <input type="search" name="user_query" placeholder="Search here..." class="searchbar">
                     <button type="submit" name="search" class="btn2"><img src="../Account/Searchicon.png" class="icon" id="image"></button>
                     <!--<input type="submit" name="search" value="Search">--->
-                </form>  
+                </form> 
+                </div>
+                </nav>
 
             <img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">
-            <img src="../eShopping/images/menu.png" class="menu-icon"
-                 onclick="menu-toggle()">
+            <img src="../eShopping/images/menu(Black).png" class="menu-icon"
+                 onclick="showMenu()">
         </div>
     </div>
 </div>
@@ -205,6 +209,20 @@ if(isset($message)){
         <p class="copyright">&#169; 2022 eShopping</p>
     </div>
 </div>
+
+<!--------------JavaScript for Toggle Menu----------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+</script>
 
 </body>
 </html>
