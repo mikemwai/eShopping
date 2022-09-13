@@ -69,10 +69,20 @@ if(!isset($_SESSION['last_name'])){
                     <li><a href="../About/About.php">About</a></li>
                     <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
                     <li><a href="../Account/Account.php">Account</a></li>
-                    <li><a href="../Account/Cart.php">Cart</a></li>
+                    <li><a href="Logout.php">Logout</a></li>
                 </ul>
-                </div>
-                </nav>
+            </nav>
+
+            <!-----<nav>
+                <ul id="MenuItems">
+                    <li><a href="../Homepage/home.php">Home</a></li>
+                    <li><a href="../Homepage/Shoppage.php">Shop</a></li>
+                    <li><a href="../About/About.php">About</a></li>
+                    <li><a href="../Contact%20Us/Contact.php">Contact</a></li>
+                    <li><a href="../Account/Account.php">Account</a></li>-
+                    <li><a href="Logout.php">Logout</a></li>
+                </ul>
+            </nav>---->
 
             <!---<img onclick="window.location.href='../Account/Cart.php';" src="../eShopping/images/cart.png" width="30px" height="30px">--->
             <img src="../eShopping/images/menu(Black).png" class="menu-icon"
