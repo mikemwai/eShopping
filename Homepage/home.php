@@ -16,6 +16,9 @@
                 <img src="Logo(White).png" width="200px">
             </div>
             <nav>
+                <div class="nav-links" id="navLinks">
+                <img src="../eShopping/images/close.png" class="menu-icon"
+                 onclick="hideMenu()">
                 <ul id="MenuItems">
                     <li><a href="../Homepage/home.php">Home</a></li>
                     <li><a href="../Homepage/Shoppage.php">Shop</a></li>
@@ -24,11 +27,12 @@
                     <li><a href="../Account/Account.php">Account</a></li>
                     <li><a href="../Account/Cart.php">Cart</a></li>
                 </ul>
+                </div>
            </nav>
 
             <!--<img  onclick="window.location.href='../Account/Cart.php';" src="ShoppingCart.png" width="30px" height="30px">---->
             <img src="../eShopping/images/menu.png" class="menu-icon"
-                 onclick="menu-toggle()">
+                 onclick="showMenu()">
         </div>
 
         <div class="row">
@@ -131,7 +135,7 @@
 <div class="offer">
     <div class="small-container">
         <div class="row">
-            <div class="col-2">
+            <div class="col">
             </div>
 
             <div class="col-2">
@@ -330,5 +334,20 @@
         <p class="copyright">&#169; 2022 eShopping</p>
     </div>
 </div>
+
+<!--------------JavaScript for Toggle Menu----------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+</script>
+
 </body>
 </html>
