@@ -31,11 +31,11 @@
                     <li><a href="../Account/Account.php">Account</a></li>
                     <li><a href="../Account/Cart.php">Cart</a></li>
                 </ul>
-                <form action="results.php" class="search" method="get">
+                <!---<form action="results.php" class="search" method="get">
                     <input type="search" name="user_query" placeholder="Search here..." class="searchbar">
                     <button type="submit" name="search" class="btn2"><img src="../Account/Searchicon.png" class="icon" id="image"></button>
-                    <!--<input type="submit" name="search" value="Search">--->
-                </form> 
+                    <input type="submit" name="search" value="Search">
+                </form>--> 
                 </div>
                 </nav>
     
