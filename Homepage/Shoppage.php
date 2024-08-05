@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>eShopping | Shoppage</title>
     <link rel="stylesheet" href="Shoppage.css">
+    <link rel="icon" href="../Homepage/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
@@ -171,7 +172,7 @@
 
         </div>
         <hr>
-        <p class="copyright">&#169; 2022 eShopping</p>
+        <p class="copyright">&#169; <?php echo date("Y"); ?> eShopping</p>
     </div>
 </div>
 

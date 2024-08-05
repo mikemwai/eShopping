@@ -105,6 +105,7 @@ if(mysqli_num_rows($result) > 0)
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>eShopping | Account</title>
     <link rel="stylesheet" href="Account.css">
+    <link rel="icon" href="../Homepage/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 <div style="margin: 0 auto" class="hero">

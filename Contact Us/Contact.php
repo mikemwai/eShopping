@@ -6,6 +6,7 @@
     <title>eShopping | Contactpage</title>
     <link rel="stylesheet" href="../Homepage/Shoppage.css">
     <link rel="stylesheet" href="Contact.css">
+    <link rel="icon" href="../Homepage/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
@@ -125,7 +126,7 @@
 
         </div>
         <hr>
-        <p class="copyright">&#169; 2022 eShopping</p>
+        <p class="copyright">&#169; <?php echo date("Y"); ?> eShopping</p>
     </div>
 </div>
 

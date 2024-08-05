@@ -58,6 +58,7 @@ if(isset($_POST['add_to_product']))
     <title>eShopping | Results Page</title>
     <!--<link rel="stylesheet" href="Shoppage.css">--->
     <link rel="stylesheet" href="../Account/Products.css">
+    <link rel="icon" href="../Homepage/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
@@ -233,7 +234,7 @@ if(isset($message)){
 
         </div>
         <hr>
-        <p class="copyright">&#169; 2022 eShopping</p>
+        <p class="copyright">&#169; <?php echo date("Y"); ?> eShopping</p>
     </div>
 </div>
 

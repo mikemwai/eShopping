@@ -46,6 +46,7 @@ if(!isset($_SESSION['last_name'])){
     <title>eShopping | Cartpage</title>
     <link rel="stylesheet" href="Products.css">
     <link rel="stylesheet" href="Admin.css">
+    <link rel="icon" href="../Homepage/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
@@ -242,7 +243,7 @@ $select = mysqli_query($conn, "SELECT * FROM tbl_users");
 
         </div>
         <hr>
-        <p class="copyright">&#169; 2022 eShopping</p>
+        <p class="copyright">&#169; <?php echo date("Y"); ?> eShopping</p>
     </div>
 </div>
 

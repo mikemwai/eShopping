@@ -12,5 +12,5 @@ My first ecommerce website project that I created for an organization called eSh
 - Run the project:
 
 ```sh
-  php -S localhost:8000
+  php -S localhost:8000/Homepage/home.php
 ```

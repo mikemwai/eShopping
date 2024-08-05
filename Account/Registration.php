@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>eShopping | Registration</title>
     <link rel="stylesheet" href="../Account/Registration.css">
+    <link rel="icon" href="../Homepage/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
