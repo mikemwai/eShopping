@@ -14,3 +14,5 @@ My first ecommerce website project that I created for an organization called eSh
 ```sh
   php -S localhost:8000/Homepage/home.php
 ```
+
+- Stop the project: `Ctrl + C`
